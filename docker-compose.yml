@@ -22,9 +22,17 @@ services:
     environment:
       TZ: Asia/Tokyo
     ports:
-      - "3000:3000"
+      - "3001:3001"
     depends_on:
       - db
+  front:
+    build:
+      context: ./front
+    volumes:
+      - ./front/app:/front
+    command: 'yarn dev'
+    ports:
+      - 3000:3000
 volumes:
   postgres_data:
   bundle_data:
