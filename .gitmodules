@@ -1,3 +1,6 @@
 [submodule "api"]
 	path = api
 	url = https://github.com/ju-to-sh/dekimath-api.git
+[submodule "front"]
+	path = front
+	url = https://github.com/ju-to-sh/dekimath-front.git
